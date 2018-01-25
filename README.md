@@ -22,7 +22,14 @@ Spring Cloud章节的配套代码，如有疑问，请移步至该地址。
 | 配置服务                  | Spring Cloud Config Server           |
 | API Gateway           | Zuul                                 |
 
-
+## 名词说明
+1.注册中心：Eureka,Consul,Zookeeper
+2.服务消费者：
+  Ribbon（客户端负载均衡器，三种策略:轮询、断路器和根据响应时间加权）
+  Feign（声明式的web service客户端，Spring Cloud为Feign添加了 Spring MVC的注解支持，并整合了Ribbon和Eureka来为使用Feign时提供负载均衡）
+3.熔断器：Hystrix
+4.配置中心：cloud config server
+5.API gateway: zuul（提供了动态路由、监控、回退、安全等功能）
 
 # 准备
 
